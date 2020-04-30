@@ -28,7 +28,7 @@ public class HelloControllerTest {
 
     @WithMockUser(roles = "USER")
     @Test
-    public void hello_returned() throws Exception {
+    public void hello가_리턴된다() throws Exception {
         String ret = "hello";
 
         mvc.perform(get("/hello"))
@@ -38,7 +38,7 @@ public class HelloControllerTest {
 
     @WithMockUser(roles = "USER")
     @Test
-    public void helloDto_returned() throws Exception {
+    public void helloDto가_리턴된다() throws Exception {
         String name = "hello";
         int amount = 1000;
 
