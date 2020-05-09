@@ -24,7 +24,7 @@ notifications:
       - rhj4862@gmail.com
 
 before_deploy:
-  - zip -r freelec-springboot2-webservice /home/ec2-user/app/step1/springboot-example
+  - zip -r freelec-springboot2-webservice springboot-example
   - mkdir -p deploy
   - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
 
