@@ -39,7 +39,7 @@ deploy:
     bucket: chipmunk-springboot-build # s3 버킷
     key: freelec-springboot2-webservice.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip # 압축 확장자
-    application: freelec-springboot2-webservice # 빌드 파일을 압축해서 전달
+    application: freelec-springboot2-webservice # 웹 콘솔에서 등록한 CodeDeply 애플리케이션
     deployment_group: freelec-springboot2-webservice-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
