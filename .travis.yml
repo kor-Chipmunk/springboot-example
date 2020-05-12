@@ -17,12 +17,6 @@ before_install:
 
 script: "./gradlew clean build"
 
-# CI 실행 완료 시 메일로 알람
-notifications:
-  email:
-    recipients:
-      - rhj4862@gmail.com
-
 before_deploy:
   - zip -r freelec-springboot2-webservice *
   - mkdir -p deploy
@@ -53,3 +47,9 @@ deploy:
 
     region: ap-northeast-2
     wait-until-deployed: true
+
+# CI 실행 완료 시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - rhj4862@gmail.com
